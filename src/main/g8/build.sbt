@@ -1,4 +1,5 @@
-// give the user a nice default project!
+import Dependencies._
+
 ThisBuild / organization := "com.example"
 ThisBuild / scalaVersion := "2.11.10"
 ThisBuild / version := "0.1.0-SNAPSHOT"
