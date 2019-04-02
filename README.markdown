@@ -1,5 +1,13 @@
 A [Giter8][g8] template for sparkstreaming kafka!
 
+## Useage
+```shell
+$ sbt new counter2015/SparkStreamingKafka.g8
+# or 
+$ g8 counter2015/SparkStreamingKafka.g8
+```
+
+
 Template license
 ----------------
 Written in 2019 by counter2015
