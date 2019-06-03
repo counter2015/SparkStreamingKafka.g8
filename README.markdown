@@ -7,6 +7,34 @@ $ sbt new counter2015/SparkStreamingKafka.g8
 $ g8 counter2015/SparkStreamingKafka.g8
 ```
 
+the template struct may like this 
+```shell
+$ tree
+.
+├── build.sbt
+├── project
+│   ├── Dependencies.scala
+│   ├── assembly.sbt
+│   └── build.properties
+└── src
+    └── main
+        ├── resources
+        │   └── application.conf
+        └── scala
+            ├── ConfigInstance.scala
+            └── SparkStreamingApp.scala
+```
+
+
+You should change configuration to adapt your project.
+- application.conf where include kafka brokers and topic
+- checkpointPath in `SparkStreamingApp.scala`
+
+the packages version listed at `Dependencies.scala`, default
+- kafka 2.0.1
+- spark 2.4.0
+- spark-streaming-kafka 1.6.3
+
 
 Template license
 ----------------
